@@ -1,0 +1,17 @@
+syntax = "proto3"; // 若不指定，默认为 proto2
+package KvMsg;
+
+message Request {
+  string key = 1;
+  enum OpType {
+    GET = 0;
+    PUT = 1;
+  }
+  string val = 2;
+  OpType op_type = 3;
+}
+
+message Response {
+  int32 code = 1;     // 0为成功，小于0失败
+  string data = 2;
+}

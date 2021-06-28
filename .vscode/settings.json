@@ -1,0 +1,33 @@
+{
+  "files.associations": {
+    ".editorconfig": "cpp",
+    "*.tcc": "cpp",
+    "streambuf": "cpp",
+    "algorithm": "cpp",
+    "functional": "cpp",
+    "cstring": "cpp",
+    "iostream": "cpp",
+    "fstream": "cpp",
+    "iosfwd": "cpp",
+    "ostream": "cpp",
+    "cctype": "cpp",
+    "clocale": "cpp",
+    "cmath": "cpp",
+    "cstdio": "cpp",
+    "cstdlib": "cpp",
+    "ctime": "cpp",
+    "cwchar": "cpp",
+    "cwctype": "cpp",
+    "sstream": "cpp",
+    "locale": "cpp",
+    "optional": "cpp",
+    "istream": "cpp",
+    "tuple": "cpp",
+    "array": "cpp",
+    "utility": "cpp",
+    "future": "cpp",
+    "__functional_base": "cpp",
+    "memory": "cpp",
+    "thread": "cpp"
+  }
+}
