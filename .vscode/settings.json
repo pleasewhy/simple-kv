@@ -28,6 +28,8 @@
     "future": "cpp",
     "__functional_base": "cpp",
     "memory": "cpp",
-    "thread": "cpp"
+    "thread": "cpp",
+    "string": "cpp",
+    "string_view": "cpp"
   }
 }

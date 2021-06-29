@@ -24,8 +24,11 @@ string KvClient::Get(const string &key) {
   req.set_op_type(req.GET);
   req.SerializeToFileDescriptor(fd);
   char buf[1024];
+
+  // 等待server回复
   int n = read(fd, buf, sizeof(buf));
   resp.ParseFromArray(buf, n);
+  close(fd);
   return std::move(resp.data());
 }
 
@@ -40,9 +43,12 @@ bool KvClient::Put(const string &key, const string &val) {
   char buf[1024];
   int n = read(sock_fd, buf, sizeof(buf));
   resp.ParseFromArray(buf, n);
+  
+  close(fd);
   if (resp.code() < 0) {
     return false;
   }
+
   return true;
 }
 
